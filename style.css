@@ -16,6 +16,7 @@ body{
 a{
     text-decoration: none;
 }
+
                                  /* NAVBAR */
 header{
     width: 100%;
@@ -23,9 +24,11 @@ header{
     flex-direction: column;
     gap:10px;
 }
+
  #logo{
    
     padding-top: 40px;
+    padding-left: 15px;
     flex: 1;
 }
 
@@ -68,6 +71,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 15px;
 }
 
                                 /* PARAGRAPHE 1 */
@@ -320,8 +324,7 @@ gap: 30px;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 15px 15px 0 0; 
-   
+    border-radius: 15px 15px 0 0;   
 }
 
 .details_hebergements{
@@ -415,8 +418,7 @@ gap: 30px;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 15px 0 0 15px;
-   
+    border-radius: 15px 0 0 15px; 
 }
 
 .details_populaires{
@@ -487,20 +489,18 @@ gap: 30px;
     color: black;
 }
 
-.petitActiviteEgaux{
-    
+.petitActiviteEgaux{ 
     height: 45%;
 }
 
 .petitActivite60{
-  
     height: 50%;
 }
 
 .petitActivite40{
-  
     height: 40%;
 }
+
 .imgActGrande{
     width: 100%;
     height: 100%;
@@ -514,7 +514,6 @@ gap: 30px;
     width: 100%;
     height: 100%;
     border-radius: 25px 25px 0 0;
-
 }
 
 .titreActGrande{
@@ -533,7 +532,6 @@ gap: 30px;
     height: 80%;
     border-radius: 25px 25px 0 0;
     display: flex;
-
 }
 
 .imgActPetite> img{
@@ -569,12 +567,11 @@ footer{
     width: 100%;
     padding: 40px 0px  40px 0px;
     color: black;
-    background-color: #F2F2F2;
-    
+    background-color: #F2F2F2; 
+    gap: 13%;   
 }
 
-.footer_item{
-    
+.footer_item{   
     display: flex;
     flex-direction: column;
     gap:10px;
@@ -609,21 +606,22 @@ footer{
     color: black;
     text-decoration: none;
 }
+
 .slogan{
     margin-left: 20px;
     margin-right: 20px;
     }
+
+
 /* MEDIA QUERIES TABLETTES */
  @media screen and (max-width: 768px){
 
                                      /* NAVBAR */
 header{
     width: 100%;
-
 }
 
-.navbar{
-   
+.navbar{ 
     flex-direction: row;
     flex-wrap: wrap;
     height: auto;
@@ -636,12 +634,11 @@ header{
     height: unset;
 }
 
-
 .navbar_links{
     height: 50px;
     order: 3;
     flex:1 0 100%;
-
+    gap: 0px;
 }
 
 #flexitem3{
@@ -650,16 +647,14 @@ header{
     padding-right: 20px;
 }
 
-.item{
-    
+.item{   
     width: 100%;
-    
+    border-bottom: 2px solid #F2F2F2;  
 } 
 
-.item:hover{
-    
+.item:hover{  
     border-top: unset;
-    border-bottom: 1px solid #0065FC;
+    border-bottom: 2px solid #0065FC;
 }  
 
 #item3{
@@ -670,17 +665,16 @@ header{
 
 footer{
     flex-direction: column;
-    gap: 50px;
-    
-}
-.footer_item{
-    
-   
+    gap: 50px;   
 }
 
 }
+
 /*Modification pour filtres et le bouton recherche*/
 @media screen and (max-width: 1097px){
+    .desktopnone{
+        margin-left: -10px;
+    }
     .blocFiltre {
         flex-direction: column;
     }
@@ -695,9 +689,9 @@ footer{
         display: flex;
     }
     
-   
-
 }
+
+
 /*Modification pour filtres et le bouton recherche*/
 @media screen and (max-width: 800px){
    
@@ -711,19 +705,16 @@ footer{
         flex-direction: column-reverse;
         gap: 0px;;
     }
-    
     .bloc_hebergement{
         width: 100%;
         padding: 0px;
         background-color:#FFFFFF;   
     }
     .titre, .titrepop, .left_align {
-        
         margin-left: 20px;
         margin-right: 20px;
     }
     .cardsHebergements {
-     
         flex-direction: column;
     
     }
@@ -740,32 +731,28 @@ footer{
     }
     .cardpop{
         width: auto;
+        height: 13rem;
         margin-left: 20px;
         margin-right: 20px;
     }
-    
     .section2{
         padding: 20px;
         width: auto;
     }
     .blocActivites{
-        
         flex-direction: column;
         height: unset;
     }
-    
     .divActivite{
         width: 100%;
         height: 200px;
         
     }
-    
     .divActiviteDouble{
         width: 100%;
         gap:30px;
     }
     .petitActiviteEgaux, .petitActivite60, .petitActivite40{
-          
         height: 200px;
     }
     .imgActGrande, .imgActPetite{
@@ -777,4 +764,10 @@ footer{
         height: 20%;
     }
 
+    /* cardpop mobile*/
+    @media screen and (max-width: 376px){
+    .cardpop{
+        height: 10rem;
+    }
+}
 }
